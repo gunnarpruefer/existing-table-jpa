@@ -27,6 +27,6 @@ public class Upper {
     @Id
     Long lowerId;
 
-    @OneToMany(mappedBy = "top")
+    @OneToMany(mappedBy = "upper")
     List<Lower> lowers;
 }
