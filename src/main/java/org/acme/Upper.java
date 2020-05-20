@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -13,6 +14,7 @@ import javax.persistence.Table;
 @Table(name = "shared_table")
 public class Upper {
 
+    @ManyToOne
     @JoinColumn("top_id")
     @Id
     Top top;
