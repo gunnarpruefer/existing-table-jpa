@@ -17,6 +17,7 @@ public class Lower {
         @JoinColumn(name="top_id", referencedColumnName="top_id"),
         @JoinColumn(name="upper_id", referencedColumnName="upper_id")
     })
+    @Id
     Upper upper;
 
     @Column("lower_id")
