@@ -21,6 +21,10 @@ public class Upper {
     @Id
     Long id;
 
+    @Column("lower_id")
+    @Id
+    Long lowerId;
+
     @OneToMany(mappedBy = "top")
     List<Lower> lowers;
 }
